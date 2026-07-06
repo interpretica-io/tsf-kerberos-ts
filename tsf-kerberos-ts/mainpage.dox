@@ -1,0 +1,16 @@
+/** @mainpage
+
+Exercises tsf-kerberos (tapi_kerberos) from the Test Agent it runs on,
+against a KDC/Active Directory supplied by the environment:
+
+- @ref kerberos-probe - get a TGT with a principal+password and log the
+  ticket (client/server, validity, session-key enctype);
+- @ref kerberos-audit - read the KDC posture through tsf-cybersec and
+  gate on it: a principal needing no pre-authentication (AS-REP
+  roasting) and weak session-key enctypes.
+
+The realm/KDC/principal/password come from the environment
+(TSF_KRB5_*); with none set the tests skip cleanly. Authorized use
+only - the tests authenticate to a real KDC.
+
+*/

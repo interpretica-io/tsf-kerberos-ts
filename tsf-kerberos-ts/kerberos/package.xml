@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<package version="1.0">
+    <description>Kerberos</description>
+    <author mailto="maxim.menshikov@interpretica.io" />
+    <session track_conf="silent">
+        <prologue><script name="prologue"><objective>Prepare the Kerberos group.</objective></script></prologue>
+        <epilogue><script name="epilogue"><objective>Finalize the Kerberos group.</objective></script></epilogue>
+        <run><script name="probe"><objective>Get a TGT and log the ticket.</objective></script></run>
+        <run><script name="audit"><objective>Read the Kerberos posture and gate on it.</objective></script></run>
+    </session>
+</package>

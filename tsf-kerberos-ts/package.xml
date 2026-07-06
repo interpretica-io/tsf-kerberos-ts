@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<package version="1.0">
+    <description>tsf-kerberos demonstration suite</description>
+    <author mailto="maxim.menshikov@interpretica.io" />
+    <session track_conf="silent">
+        <prologue><script name="prologue"><objective>Prepare the test environment.</objective></script></prologue>
+        <epilogue><script name="epilogue"><objective>Finalize the test environment.</objective></script></epilogue>
+        <run><package name="kerberos" /></run>
+    </session>
+</package>
